@@ -41,7 +41,7 @@ in a LeftHandSideExpression, and not in a general expression location.
 However most of the time that this type is used, the intention will be to assign a LeftHandSideExpression to this type.
 So excluding the Pattern types just makes it a pain, as people have to write Expression | LeftHandSideExpression everywhere.
 */
-
+// TODO: remove these cases with AssignmentTarget instead
 export type Expression =
   | ArrayExpression
   | ArrayPattern

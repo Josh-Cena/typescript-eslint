@@ -6,6 +6,7 @@ export * from './base/Position';
 export * from './base/Range';
 export * from './base/SourceLocation';
 
+export * from './unions/AssignmentTarget';
 export * from './unions/BindingName';
 export * from './unions/BindingPattern';
 export * from './unions/CallExpressionArgument';

@@ -3,6 +3,13 @@ import type { BaseNode } from '../../base/BaseNode';
 import type { TSTypeParameterInstantiation } from '../../special/spec';
 import type { Expression } from '../../unions/Expression';
 
+/**
+ * Instantiation expression:
+ * ```
+ * C<T>
+ * foo<T>
+ * ```
+ */
 export interface TSInstantiationExpression extends BaseNode {
   type: AST_NODE_TYPES.TSInstantiationExpression;
   expression: Expression;

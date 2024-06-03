@@ -5,6 +5,7 @@ import type { Expression } from '../../unions/Expression';
 import type { Identifier } from '../Identifier/spec';
 
 interface MemberExpressionBase extends BaseNode {
+  type: AST_NODE_TYPES.MemberExpression;
   object: Expression;
   property: Expression | Identifier | PrivateIdentifier;
   computed: boolean;
@@ -12,13 +13,11 @@ interface MemberExpressionBase extends BaseNode {
 }
 
 export interface MemberExpressionComputedName extends MemberExpressionBase {
-  type: AST_NODE_TYPES.MemberExpression;
   property: Expression;
   computed: true;
 }
 
 export interface MemberExpressionNonComputedName extends MemberExpressionBase {
-  type: AST_NODE_TYPES.MemberExpression;
   property: Identifier | PrivateIdentifier;
   computed: false;
 }

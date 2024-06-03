@@ -3,6 +3,12 @@ import type { BaseNode } from '../../base/BaseNode';
 import type { Expression } from '../../unions/Expression';
 import type { TypeNode } from '../../unions/TypeNode';
 
+/**
+ * Angle-bracket type assertion
+ * ```
+ * <Type>expression
+ * ```
+ */
 export interface TSTypeAssertion extends BaseNode {
   type: AST_NODE_TYPES.TSTypeAssertion;
   typeAnnotation: TypeNode;

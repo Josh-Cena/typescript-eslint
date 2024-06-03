@@ -5,7 +5,7 @@ import type { JSXTagNameExpression } from '../../unions/JSXTagNameExpression';
 import type { JSXAttribute } from '../JSXAttribute/spec';
 import type { JSXSpreadAttribute } from '../JSXSpreadAttribute/spec';
 
-export interface JSXOpeningElement extends BaseNode {
+interface JSXOpeningElementBase extends BaseNode {
   type: AST_NODE_TYPES.JSXOpeningElement;
   typeArguments: TSTypeParameterInstantiation | undefined;
 
@@ -16,3 +16,15 @@ export interface JSXOpeningElement extends BaseNode {
   name: JSXTagNameExpression;
   attributes: (JSXAttribute | JSXSpreadAttribute)[];
 }
+
+export interface JSXOpeningElementSelfClosing extends JSXOpeningElementBase {
+  selfClosing: true;
+}
+
+export interface JSXOpeningElementNonSelfClosing extends JSXOpeningElementBase {
+  selfClosing: false;
+}
+
+export type JSXOpeningElement =
+  | JSXOpeningElementSelfClosing
+  | JSXOpeningElementNonSelfClosing;
