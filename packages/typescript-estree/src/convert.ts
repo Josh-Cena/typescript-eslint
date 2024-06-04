@@ -1689,7 +1689,10 @@ export class Converter {
 
       case SyntaxKind.Parameter: {
         let parameter: TSESTree.BindingName | TSESTree.RestElement;
-        let result: TSESTree.AssignmentPattern | TSESTree.RestElement;
+        let result:
+          | TSESTree.AssignmentPattern
+          | TSESTree.RestElement
+          | TSESTree.BindingName;
 
         if (node.dotDotDotToken) {
           parameter = result = this.createNode<TSESTree.RestElement>(node, {
@@ -1742,14 +1745,38 @@ export class Converter {
 
         const modifiers = getModifiers(node);
         if (modifiers) {
+          if (hasModifier(SyntaxKind.StaticKeyword, node)) {
+            this.#throwUnlessAllowInvalidAST(
+              node,
+              "'static' modifier cannot appear on a parameter.",
+            );
+          }
+          if (result.type === AST_NODE_TYPES.RestElement) {
+            this.#throwUnlessAllowInvalidAST(
+              node,
+              'A parameter property cannot be declared using a rest parameter.',
+            );
+          } else if (
+            (result.type === AST_NODE_TYPES.AssignmentPattern &&
+              result.left.type !== AST_NODE_TYPES.Identifier) ||
+            (result.type !== AST_NODE_TYPES.AssignmentPattern &&
+              result.type !== AST_NODE_TYPES.Identifier)
+          ) {
+            this.#throwUnlessAllowInvalidAST(
+              node,
+              'A parameter property cannot be declared using destructuring pattern.',
+            );
+          }
           return this.createNode<TSESTree.TSParameterProperty>(node, {
             type: AST_NODE_TYPES.TSParameterProperty,
             accessibility: getTSNodeAccessibility(node),
             decorators: [],
             override: hasModifier(SyntaxKind.OverrideKeyword, node),
-            parameter: result,
+            parameter: result as
+              | TSESTree.AssignmentPattern
+              | TSESTree.Identifier,
             readonly: hasModifier(SyntaxKind.ReadonlyKeyword, node),
-            static: hasModifier(SyntaxKind.StaticKeyword, node),
+            static: false,
           });
         }
         return result;

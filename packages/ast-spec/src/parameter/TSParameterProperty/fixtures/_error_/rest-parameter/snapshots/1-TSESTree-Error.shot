@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AST Fixtures parameter TSParameterProperty _error_ rest-parameter TSESTree - Error 1`] = `
+"TSError
+  1 | class Foo {
+> 2 |   constructor(public ...x: number[]) {}
+    |               ^^^^^^^^^^^^^^^^^^^^^ A parameter property cannot be declared using a rest parameter.
+  3 | }
+  4 |"
+`;

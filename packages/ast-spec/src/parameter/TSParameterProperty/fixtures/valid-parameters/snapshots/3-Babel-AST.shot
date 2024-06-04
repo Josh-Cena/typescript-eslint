@@ -1,0 +1,566 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AST Fixtures parameter TSParameterProperty valid-parameters Babel - AST 1`] = `
+Program {
+  type: "Program",
+  body: [
+    ClassDeclaration {
+      type: "ClassDeclaration",
+      body: ClassBody {
+        type: "ClassBody",
+        body: [
+          MethodDefinition {
+            type: "MethodDefinition",
+            computed: false,
+            key: Identifier {
+              type: "Identifier",
+              name: "constructor",
+
+              range: [12, 23],
+              loc: {
+                start: { column: 2, line: 2 },
+                end: { column: 13, line: 2 },
+              },
+            },
+            kind: "constructor",
+            static: false,
+            value: FunctionExpression {
+              type: "FunctionExpression",
+              async: false,
+              body: BlockStatement {
+                type: "BlockStatement",
+                body: [],
+
+                range: [171, 173],
+                loc: {
+                  start: { column: 4, line: 9 },
+                  end: { column: 6, line: 9 },
+                },
+              },
+              expression: false,
+              generator: false,
+              id: null,
+              params: [
+                TSParameterProperty {
+                  type: "TSParameterProperty",
+                  accessibility: "public",
+                  parameter: Identifier {
+                    type: "Identifier",
+                    name: "x1",
+                    typeAnnotation: TSTypeAnnotation {
+                      type: "TSTypeAnnotation",
+                      typeAnnotation: TSNumberKeyword {
+                        type: "TSNumberKeyword",
+
+                        range: [40, 46],
+                        loc: {
+                          start: { column: 15, line: 3 },
+                          end: { column: 21, line: 3 },
+                        },
+                      },
+
+                      range: [38, 46],
+                      loc: {
+                        start: { column: 13, line: 3 },
+                        end: { column: 21, line: 3 },
+                      },
+                    },
+
+                    range: [36, 46],
+                    loc: {
+                      start: { column: 11, line: 3 },
+                      end: { column: 21, line: 3 },
+                    },
+                  },
+
+                  range: [29, 46],
+                  loc: {
+                    start: { column: 4, line: 3 },
+                    end: { column: 21, line: 3 },
+                  },
+                },
+                TSParameterProperty {
+                  type: "TSParameterProperty",
+                  accessibility: "private",
+                  parameter: Identifier {
+                    type: "Identifier",
+                    name: "x2",
+                    typeAnnotation: TSTypeAnnotation {
+                      type: "TSTypeAnnotation",
+                      typeAnnotation: TSNumberKeyword {
+                        type: "TSNumberKeyword",
+
+                        range: [64, 70],
+                        loc: {
+                          start: { column: 16, line: 4 },
+                          end: { column: 22, line: 4 },
+                        },
+                      },
+
+                      range: [62, 70],
+                      loc: {
+                        start: { column: 14, line: 4 },
+                        end: { column: 22, line: 4 },
+                      },
+                    },
+
+                    range: [60, 70],
+                    loc: {
+                      start: { column: 12, line: 4 },
+                      end: { column: 22, line: 4 },
+                    },
+                  },
+
+                  range: [52, 70],
+                  loc: {
+                    start: { column: 4, line: 4 },
+                    end: { column: 22, line: 4 },
+                  },
+                },
+                TSParameterProperty {
+                  type: "TSParameterProperty",
+                  parameter: Identifier {
+                    type: "Identifier",
+                    name: "x3",
+                    typeAnnotation: TSTypeAnnotation {
+                      type: "TSTypeAnnotation",
+                      typeAnnotation: TSNumberKeyword {
+                        type: "TSNumberKeyword",
+
+                        range: [89, 95],
+                        loc: {
+                          start: { column: 17, line: 5 },
+                          end: { column: 23, line: 5 },
+                        },
+                      },
+
+                      range: [87, 95],
+                      loc: {
+                        start: { column: 15, line: 5 },
+                        end: { column: 23, line: 5 },
+                      },
+                    },
+
+                    range: [85, 95],
+                    loc: {
+                      start: { column: 13, line: 5 },
+                      end: { column: 23, line: 5 },
+                    },
+                  },
+                  readonly: true,
+
+                  range: [76, 95],
+                  loc: {
+                    start: { column: 4, line: 5 },
+                    end: { column: 23, line: 5 },
+                  },
+                },
+                TSParameterProperty {
+                  type: "TSParameterProperty",
+                  accessibility: "public",
+                  parameter: AssignmentPattern {
+                    type: "AssignmentPattern",
+                    left: Identifier {
+                      type: "Identifier",
+                      name: "x4",
+
+                      range: [108, 110],
+                      loc: {
+                        start: { column: 11, line: 6 },
+                        end: { column: 13, line: 6 },
+                      },
+                    },
+                    right: Literal {
+                      type: "Literal",
+                      raw: "1",
+                      value: 1,
+
+                      range: [113, 114],
+                      loc: {
+                        start: { column: 16, line: 6 },
+                        end: { column: 17, line: 6 },
+                      },
+                    },
+
+                    range: [108, 114],
+                    loc: {
+                      start: { column: 11, line: 6 },
+                      end: { column: 17, line: 6 },
+                    },
+                  },
+
+                  range: [101, 114],
+                  loc: {
+                    start: { column: 4, line: 6 },
+                    end: { column: 17, line: 6 },
+                  },
+                },
+                TSParameterProperty {
+                  type: "TSParameterProperty",
+                  accessibility: "public",
+                  parameter: AssignmentPattern {
+                    type: "AssignmentPattern",
+                    left: Identifier {
+                      type: "Identifier",
+                      name: "x5",
+                      typeAnnotation: TSTypeAnnotation {
+                        type: "TSTypeAnnotation",
+                        typeAnnotation: TSNumberKeyword {
+                          type: "TSNumberKeyword",
+
+                          range: [131, 137],
+                          loc: {
+                            start: { column: 15, line: 7 },
+                            end: { column: 21, line: 7 },
+                          },
+                        },
+
+                        range: [129, 137],
+                        loc: {
+                          start: { column: 13, line: 7 },
+                          end: { column: 21, line: 7 },
+                        },
+                      },
+
+                      range: [127, 137],
+                      loc: {
+                        start: { column: 11, line: 7 },
+                        end: { column: 21, line: 7 },
+                      },
+                    },
+                    right: Literal {
+                      type: "Literal",
+                      raw: "1",
+                      value: 1,
+
+                      range: [140, 141],
+                      loc: {
+                        start: { column: 24, line: 7 },
+                        end: { column: 25, line: 7 },
+                      },
+                    },
+
+                    range: [127, 141],
+                    loc: {
+                      start: { column: 11, line: 7 },
+                      end: { column: 25, line: 7 },
+                    },
+                  },
+
+                  range: [120, 141],
+                  loc: {
+                    start: { column: 4, line: 7 },
+                    end: { column: 25, line: 7 },
+                  },
+                },
+                TSParameterProperty {
+                  type: "TSParameterProperty",
+                  accessibility: "public",
+                  parameter: Identifier {
+                    type: "Identifier",
+                    name: "x6",
+                    optional: true,
+                    typeAnnotation: TSTypeAnnotation {
+                      type: "TSTypeAnnotation",
+                      typeAnnotation: TSNumberKeyword {
+                        type: "TSNumberKeyword",
+
+                        range: [159, 165],
+                        loc: {
+                          start: { column: 16, line: 8 },
+                          end: { column: 22, line: 8 },
+                        },
+                      },
+
+                      range: [157, 165],
+                      loc: {
+                        start: { column: 14, line: 8 },
+                        end: { column: 22, line: 8 },
+                      },
+                    },
+
+                    range: [154, 165],
+                    loc: {
+                      start: { column: 11, line: 8 },
+                      end: { column: 22, line: 8 },
+                    },
+                  },
+
+                  range: [147, 165],
+                  loc: {
+                    start: { column: 4, line: 8 },
+                    end: { column: 22, line: 8 },
+                  },
+                },
+              ],
+
+              range: [23, 173],
+              loc: {
+                start: { column: 13, line: 2 },
+                end: { column: 6, line: 9 },
+              },
+            },
+
+            range: [12, 173],
+            loc: {
+              start: { column: 2, line: 2 },
+              end: { column: 6, line: 9 },
+            },
+          },
+        ],
+
+        range: [8, 175],
+        loc: {
+          start: { column: 8, line: 1 },
+          end: { column: 1, line: 10 },
+        },
+      },
+      id: Identifier {
+        type: "Identifier",
+        name: "A",
+
+        range: [6, 7],
+        loc: {
+          start: { column: 6, line: 1 },
+          end: { column: 7, line: 1 },
+        },
+      },
+      superClass: null,
+
+      range: [0, 175],
+      loc: {
+        start: { column: 0, line: 1 },
+        end: { column: 1, line: 10 },
+      },
+    },
+    ClassDeclaration {
+      type: "ClassDeclaration",
+      body: ClassBody {
+        type: "ClassBody",
+        body: [
+          MethodDefinition {
+            type: "MethodDefinition",
+            computed: false,
+            key: Identifier {
+              type: "Identifier",
+              name: "constructor",
+
+              range: [199, 210],
+              loc: {
+                start: { column: 2, line: 13 },
+                end: { column: 13, line: 13 },
+              },
+            },
+            kind: "constructor",
+            static: false,
+            value: FunctionExpression {
+              type: "FunctionExpression",
+              async: false,
+              body: BlockStatement {
+                type: "BlockStatement",
+                body: [
+                  ExpressionStatement {
+                    type: "ExpressionStatement",
+                    expression: CallExpression {
+                      type: "CallExpression",
+                      arguments: [
+                        Identifier {
+                          type: "Identifier",
+                          name: "x1",
+
+                          range: [244, 246],
+                          loc: {
+                            start: { column: 10, line: 14 },
+                            end: { column: 12, line: 14 },
+                          },
+                        },
+                        Literal {
+                          type: "Literal",
+                          raw: "2",
+                          value: 2,
+
+                          range: [248, 249],
+                          loc: {
+                            start: { column: 14, line: 14 },
+                            end: { column: 15, line: 14 },
+                          },
+                        },
+                        Literal {
+                          type: "Literal",
+                          raw: "3",
+                          value: 3,
+
+                          range: [251, 252],
+                          loc: {
+                            start: { column: 17, line: 14 },
+                            end: { column: 18, line: 14 },
+                          },
+                        },
+                        Literal {
+                          type: "Literal",
+                          raw: "4",
+                          value: 4,
+
+                          range: [254, 255],
+                          loc: {
+                            start: { column: 20, line: 14 },
+                            end: { column: 21, line: 14 },
+                          },
+                        },
+                        Literal {
+                          type: "Literal",
+                          raw: "5",
+                          value: 5,
+
+                          range: [257, 258],
+                          loc: {
+                            start: { column: 23, line: 14 },
+                            end: { column: 24, line: 14 },
+                          },
+                        },
+                        Literal {
+                          type: "Literal",
+                          raw: "6",
+                          value: 6,
+
+                          range: [260, 261],
+                          loc: {
+                            start: { column: 26, line: 14 },
+                            end: { column: 27, line: 14 },
+                          },
+                        },
+                      ],
+                      callee: Super {
+                        type: "Super",
+
+                        range: [238, 243],
+                        loc: {
+                          start: { column: 4, line: 14 },
+                          end: { column: 9, line: 14 },
+                        },
+                      },
+                      optional: false,
+
+                      range: [238, 262],
+                      loc: {
+                        start: { column: 4, line: 14 },
+                        end: { column: 28, line: 14 },
+                      },
+                    },
+
+                    range: [238, 263],
+                    loc: {
+                      start: { column: 4, line: 14 },
+                      end: { column: 29, line: 14 },
+                    },
+                  },
+                ],
+
+                range: [232, 267],
+                loc: {
+                  start: { column: 35, line: 13 },
+                  end: { column: 3, line: 15 },
+                },
+              },
+              expression: false,
+              generator: false,
+              id: null,
+              params: [
+                TSParameterProperty {
+                  type: "TSParameterProperty",
+                  override: true,
+                  parameter: Identifier {
+                    type: "Identifier",
+                    name: "x1",
+                    typeAnnotation: TSTypeAnnotation {
+                      type: "TSTypeAnnotation",
+                      typeAnnotation: TSNumberKeyword {
+                        type: "TSNumberKeyword",
+
+                        range: [224, 230],
+                        loc: {
+                          start: { column: 27, line: 13 },
+                          end: { column: 33, line: 13 },
+                        },
+                      },
+
+                      range: [222, 230],
+                      loc: {
+                        start: { column: 25, line: 13 },
+                        end: { column: 33, line: 13 },
+                      },
+                    },
+
+                    range: [220, 230],
+                    loc: {
+                      start: { column: 23, line: 13 },
+                      end: { column: 33, line: 13 },
+                    },
+                  },
+
+                  range: [211, 230],
+                  loc: {
+                    start: { column: 14, line: 13 },
+                    end: { column: 33, line: 13 },
+                  },
+                },
+              ],
+
+              range: [210, 267],
+              loc: {
+                start: { column: 13, line: 13 },
+                end: { column: 3, line: 15 },
+              },
+            },
+
+            range: [199, 267],
+            loc: {
+              start: { column: 2, line: 13 },
+              end: { column: 3, line: 15 },
+            },
+          },
+        ],
+
+        range: [195, 269],
+        loc: {
+          start: { column: 18, line: 12 },
+          end: { column: 1, line: 16 },
+        },
+      },
+      id: Identifier {
+        type: "Identifier",
+        name: "B",
+
+        range: [183, 184],
+        loc: {
+          start: { column: 6, line: 12 },
+          end: { column: 7, line: 12 },
+        },
+      },
+      superClass: Identifier {
+        type: "Identifier",
+        name: "A",
+
+        range: [193, 194],
+        loc: {
+          start: { column: 16, line: 12 },
+          end: { column: 17, line: 12 },
+        },
+      },
+
+      range: [177, 269],
+      loc: {
+        start: { column: 0, line: 12 },
+        end: { column: 1, line: 16 },
+      },
+    },
+  ],
+  sourceType: "script",
+
+  range: [0, 270],
+  loc: {
+    start: { column: 0, line: 1 },
+    end: { column: 0, line: 17 },
+  },
+}
+`;

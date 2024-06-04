@@ -1,0 +1,740 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AST Fixtures parameter TSParameterProperty valid-parameters AST Alignment - Token 1`] = `
+"Snapshot Diff:
+- TSESTree
++ Babel
+
+  Array [
+    Keyword {
+      type: 'Keyword',
+      value: 'class',
+
+      range: [0, 5],
+      loc: {
+        start: { column: 0, line: 1 },
+        end: { column: 5, line: 1 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'A',
+
+      range: [6, 7],
+      loc: {
+        start: { column: 6, line: 1 },
+        end: { column: 7, line: 1 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '{',
+
+      range: [8, 9],
+      loc: {
+        start: { column: 8, line: 1 },
+        end: { column: 9, line: 1 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'constructor',
+
+      range: [12, 23],
+      loc: {
+        start: { column: 2, line: 2 },
+        end: { column: 13, line: 2 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '(',
+
+      range: [23, 24],
+      loc: {
+        start: { column: 13, line: 2 },
+        end: { column: 14, line: 2 },
+      },
+    },
+-   Keyword {
+-     type: 'Keyword',
++   Identifier {
++     type: 'Identifier',
+      value: 'public',
+
+      range: [29, 35],
+      loc: {
+        start: { column: 4, line: 3 },
+        end: { column: 10, line: 3 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'x1',
+
+      range: [36, 38],
+      loc: {
+        start: { column: 11, line: 3 },
+        end: { column: 13, line: 3 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ':',
+
+      range: [38, 39],
+      loc: {
+        start: { column: 13, line: 3 },
+        end: { column: 14, line: 3 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'number',
+
+      range: [40, 46],
+      loc: {
+        start: { column: 15, line: 3 },
+        end: { column: 21, line: 3 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [46, 47],
+      loc: {
+        start: { column: 21, line: 3 },
+        end: { column: 22, line: 3 },
+      },
+    },
+-   Keyword {
+-     type: 'Keyword',
++   Identifier {
++     type: 'Identifier',
+      value: 'private',
+
+      range: [52, 59],
+      loc: {
+        start: { column: 4, line: 4 },
+        end: { column: 11, line: 4 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'x2',
+
+      range: [60, 62],
+      loc: {
+        start: { column: 12, line: 4 },
+        end: { column: 14, line: 4 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ':',
+
+      range: [62, 63],
+      loc: {
+        start: { column: 14, line: 4 },
+        end: { column: 15, line: 4 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'number',
+
+      range: [64, 70],
+      loc: {
+        start: { column: 16, line: 4 },
+        end: { column: 22, line: 4 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [70, 71],
+      loc: {
+        start: { column: 22, line: 4 },
+        end: { column: 23, line: 4 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'readonly',
+
+      range: [76, 84],
+      loc: {
+        start: { column: 4, line: 5 },
+        end: { column: 12, line: 5 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'x3',
+
+      range: [85, 87],
+      loc: {
+        start: { column: 13, line: 5 },
+        end: { column: 15, line: 5 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ':',
+
+      range: [87, 88],
+      loc: {
+        start: { column: 15, line: 5 },
+        end: { column: 16, line: 5 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'number',
+
+      range: [89, 95],
+      loc: {
+        start: { column: 17, line: 5 },
+        end: { column: 23, line: 5 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [95, 96],
+      loc: {
+        start: { column: 23, line: 5 },
+        end: { column: 24, line: 5 },
+      },
+    },
+-   Keyword {
+-     type: 'Keyword',
++   Identifier {
++     type: 'Identifier',
+      value: 'public',
+
+      range: [101, 107],
+      loc: {
+        start: { column: 4, line: 6 },
+        end: { column: 10, line: 6 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'x4',
+
+      range: [108, 110],
+      loc: {
+        start: { column: 11, line: 6 },
+        end: { column: 13, line: 6 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '=',
+
+      range: [111, 112],
+      loc: {
+        start: { column: 14, line: 6 },
+        end: { column: 15, line: 6 },
+      },
+    },
+    Numeric {
+      type: 'Numeric',
+      value: '1',
+
+      range: [113, 114],
+      loc: {
+        start: { column: 16, line: 6 },
+        end: { column: 17, line: 6 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [114, 115],
+      loc: {
+        start: { column: 17, line: 6 },
+        end: { column: 18, line: 6 },
+      },
+    },
+-   Keyword {
+-     type: 'Keyword',
++   Identifier {
++     type: 'Identifier',
+      value: 'public',
+
+      range: [120, 126],
+      loc: {
+        start: { column: 4, line: 7 },
+        end: { column: 10, line: 7 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'x5',
+
+      range: [127, 129],
+      loc: {
+        start: { column: 11, line: 7 },
+        end: { column: 13, line: 7 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ':',
+
+      range: [129, 130],
+      loc: {
+        start: { column: 13, line: 7 },
+        end: { column: 14, line: 7 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'number',
+
+      range: [131, 137],
+      loc: {
+        start: { column: 15, line: 7 },
+        end: { column: 21, line: 7 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '=',
+
+      range: [138, 139],
+      loc: {
+        start: { column: 22, line: 7 },
+        end: { column: 23, line: 7 },
+      },
+    },
+    Numeric {
+      type: 'Numeric',
+      value: '1',
+
+      range: [140, 141],
+      loc: {
+        start: { column: 24, line: 7 },
+        end: { column: 25, line: 7 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [141, 142],
+      loc: {
+        start: { column: 25, line: 7 },
+        end: { column: 26, line: 7 },
+      },
+    },
+-   Keyword {
+-     type: 'Keyword',
++   Identifier {
++     type: 'Identifier',
+      value: 'public',
+
+      range: [147, 153],
+      loc: {
+        start: { column: 4, line: 8 },
+        end: { column: 10, line: 8 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'x6',
+
+      range: [154, 156],
+      loc: {
+        start: { column: 11, line: 8 },
+        end: { column: 13, line: 8 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '?',
+
+      range: [156, 157],
+      loc: {
+        start: { column: 13, line: 8 },
+        end: { column: 14, line: 8 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ':',
+
+      range: [157, 158],
+      loc: {
+        start: { column: 14, line: 8 },
+        end: { column: 15, line: 8 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'number',
+
+      range: [159, 165],
+      loc: {
+        start: { column: 16, line: 8 },
+        end: { column: 22, line: 8 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [165, 166],
+      loc: {
+        start: { column: 22, line: 8 },
+        end: { column: 23, line: 8 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ')',
+
+      range: [169, 170],
+      loc: {
+        start: { column: 2, line: 9 },
+        end: { column: 3, line: 9 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '{',
+
+      range: [171, 172],
+      loc: {
+        start: { column: 4, line: 9 },
+        end: { column: 5, line: 9 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '}',
+
+      range: [172, 173],
+      loc: {
+        start: { column: 5, line: 9 },
+        end: { column: 6, line: 9 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '}',
+
+      range: [174, 175],
+      loc: {
+        start: { column: 0, line: 10 },
+        end: { column: 1, line: 10 },
+      },
+    },
+    Keyword {
+      type: 'Keyword',
+      value: 'class',
+
+      range: [177, 182],
+      loc: {
+        start: { column: 0, line: 12 },
+        end: { column: 5, line: 12 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'B',
+
+      range: [183, 184],
+      loc: {
+        start: { column: 6, line: 12 },
+        end: { column: 7, line: 12 },
+      },
+    },
+    Keyword {
+      type: 'Keyword',
+      value: 'extends',
+
+      range: [185, 192],
+      loc: {
+        start: { column: 8, line: 12 },
+        end: { column: 15, line: 12 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'A',
+
+      range: [193, 194],
+      loc: {
+        start: { column: 16, line: 12 },
+        end: { column: 17, line: 12 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '{',
+
+      range: [195, 196],
+      loc: {
+        start: { column: 18, line: 12 },
+        end: { column: 19, line: 12 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'constructor',
+
+      range: [199, 210],
+      loc: {
+        start: { column: 2, line: 13 },
+        end: { column: 13, line: 13 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '(',
+
+      range: [210, 211],
+      loc: {
+        start: { column: 13, line: 13 },
+        end: { column: 14, line: 13 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'override',
+
+      range: [211, 219],
+      loc: {
+        start: { column: 14, line: 13 },
+        end: { column: 22, line: 13 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'x1',
+
+      range: [220, 222],
+      loc: {
+        start: { column: 23, line: 13 },
+        end: { column: 25, line: 13 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ':',
+
+      range: [222, 223],
+      loc: {
+        start: { column: 25, line: 13 },
+        end: { column: 26, line: 13 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'number',
+
+      range: [224, 230],
+      loc: {
+        start: { column: 27, line: 13 },
+        end: { column: 33, line: 13 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ')',
+
+      range: [230, 231],
+      loc: {
+        start: { column: 33, line: 13 },
+        end: { column: 34, line: 13 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '{',
+
+      range: [232, 233],
+      loc: {
+        start: { column: 35, line: 13 },
+        end: { column: 36, line: 13 },
+      },
+    },
+    Keyword {
+      type: 'Keyword',
+      value: 'super',
+
+      range: [238, 243],
+      loc: {
+        start: { column: 4, line: 14 },
+        end: { column: 9, line: 14 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '(',
+
+      range: [243, 244],
+      loc: {
+        start: { column: 9, line: 14 },
+        end: { column: 10, line: 14 },
+      },
+    },
+    Identifier {
+      type: 'Identifier',
+      value: 'x1',
+
+      range: [244, 246],
+      loc: {
+        start: { column: 10, line: 14 },
+        end: { column: 12, line: 14 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [246, 247],
+      loc: {
+        start: { column: 12, line: 14 },
+        end: { column: 13, line: 14 },
+      },
+    },
+    Numeric {
+      type: 'Numeric',
+      value: '2',
+
+      range: [248, 249],
+      loc: {
+        start: { column: 14, line: 14 },
+        end: { column: 15, line: 14 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [249, 250],
+      loc: {
+        start: { column: 15, line: 14 },
+        end: { column: 16, line: 14 },
+      },
+    },
+    Numeric {
+      type: 'Numeric',
+      value: '3',
+
+      range: [251, 252],
+      loc: {
+        start: { column: 17, line: 14 },
+        end: { column: 18, line: 14 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [252, 253],
+      loc: {
+        start: { column: 18, line: 14 },
+        end: { column: 19, line: 14 },
+      },
+    },
+    Numeric {
+      type: 'Numeric',
+      value: '4',
+
+      range: [254, 255],
+      loc: {
+        start: { column: 20, line: 14 },
+        end: { column: 21, line: 14 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [255, 256],
+      loc: {
+        start: { column: 21, line: 14 },
+        end: { column: 22, line: 14 },
+      },
+    },
+    Numeric {
+      type: 'Numeric',
+      value: '5',
+
+      range: [257, 258],
+      loc: {
+        start: { column: 23, line: 14 },
+        end: { column: 24, line: 14 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ',',
+
+      range: [258, 259],
+      loc: {
+        start: { column: 24, line: 14 },
+        end: { column: 25, line: 14 },
+      },
+    },
+    Numeric {
+      type: 'Numeric',
+      value: '6',
+
+      range: [260, 261],
+      loc: {
+        start: { column: 26, line: 14 },
+        end: { column: 27, line: 14 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ')',
+
+      range: [261, 262],
+      loc: {
+        start: { column: 27, line: 14 },
+        end: { column: 28, line: 14 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: ';',
+
+      range: [262, 263],
+      loc: {
+        start: { column: 28, line: 14 },
+        end: { column: 29, line: 14 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '}',
+
+      range: [266, 267],
+      loc: {
+        start: { column: 2, line: 15 },
+        end: { column: 3, line: 15 },
+      },
+    },
+    Punctuator {
+      type: 'Punctuator',
+      value: '}',
+
+      range: [268, 269],
+      loc: {
+        start: { column: 0, line: 16 },
+        end: { column: 1, line: 16 },
+      },
+    },
+  ]"
+`;

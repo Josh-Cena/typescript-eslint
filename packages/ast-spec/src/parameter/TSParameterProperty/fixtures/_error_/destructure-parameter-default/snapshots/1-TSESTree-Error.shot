@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AST Fixtures parameter TSParameterProperty _error_ destructure-parameter-default TSESTree - Error 1`] = `
+"TSError
+  1 | class Foo {
+> 2 |   constructor(public { x }: any = 1) {}
+    |               ^^^^^^^^^^^^^^^^^^^^^ A parameter property cannot be declared using destructuring pattern.
+  3 | }
+  4 |"
+`;

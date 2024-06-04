@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AST Fixtures parameter TSParameterProperty override-non-extended Babel - AST 1`] = `
+Program {
+  type: "Program",
+  body: [
+    ClassDeclaration {
+      type: "ClassDeclaration",
+      body: ClassBody {
+        type: "ClassBody",
+        body: [
+          MethodDefinition {
+            type: "MethodDefinition",
+            computed: false,
+            key: Identifier {
+              type: "Identifier",
+              name: "constructor",
+
+              range: [53, 64],
+              loc: {
+                start: { column: 2, line: 3 },
+                end: { column: 13, line: 3 },
+              },
+            },
+            kind: "constructor",
+            static: false,
+            value: FunctionExpression {
+              type: "FunctionExpression",
+              async: false,
+              body: BlockStatement {
+                type: "BlockStatement",
+                body: [],
+
+                range: [85, 87],
+                loc: {
+                  start: { column: 34, line: 3 },
+                  end: { column: 36, line: 3 },
+                },
+              },
+              expression: false,
+              generator: false,
+              id: null,
+              params: [
+                TSParameterProperty {
+                  type: "TSParameterProperty",
+                  override: true,
+                  parameter: Identifier {
+                    type: "Identifier",
+                    name: "x",
+                    typeAnnotation: TSTypeAnnotation {
+                      type: "TSTypeAnnotation",
+                      typeAnnotation: TSNumberKeyword {
+                        type: "TSNumberKeyword",
+
+                        range: [77, 83],
+                        loc: {
+                          start: { column: 26, line: 3 },
+                          end: { column: 32, line: 3 },
+                        },
+                      },
+
+                      range: [75, 83],
+                      loc: {
+                        start: { column: 24, line: 3 },
+                        end: { column: 32, line: 3 },
+                      },
+                    },
+
+                    range: [74, 83],
+                    loc: {
+                      start: { column: 23, line: 3 },
+                      end: { column: 32, line: 3 },
+                    },
+                  },
+
+                  range: [65, 83],
+                  loc: {
+                    start: { column: 14, line: 3 },
+                    end: { column: 32, line: 3 },
+                  },
+                },
+              ],
+
+              range: [64, 87],
+              loc: {
+                start: { column: 13, line: 3 },
+                end: { column: 36, line: 3 },
+              },
+            },
+
+            range: [53, 87],
+            loc: {
+              start: { column: 2, line: 3 },
+              end: { column: 36, line: 3 },
+            },
+          },
+        ],
+
+        range: [8, 89],
+        loc: {
+          start: { column: 8, line: 1 },
+          end: { column: 1, line: 4 },
+        },
+      },
+      id: Identifier {
+        type: "Identifier",
+        name: "A",
+
+        range: [6, 7],
+        loc: {
+          start: { column: 6, line: 1 },
+          end: { column: 7, line: 1 },
+        },
+      },
+      superClass: null,
+
+      range: [0, 89],
+      loc: {
+        start: { column: 0, line: 1 },
+        end: { column: 1, line: 4 },
+      },
+    },
+  ],
+  sourceType: "script",
+
+  range: [0, 90],
+  loc: {
+    start: { column: 0, line: 1 },
+    end: { column: 0, line: 5 },
+  },
+}
+`;
